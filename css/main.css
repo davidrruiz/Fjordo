@@ -17,6 +17,12 @@ body{
    
 }
 
+.carousel{
+
+    grid-area: carousel;
+    
+}
+
 
 .menu{
     
@@ -47,6 +53,7 @@ body{
     margin:0;
     padding:0;
     display:flex;  
+   
 }
 
 .menu ul li a{
@@ -56,24 +63,76 @@ body{
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+   
+    
 
 }
 
 .menu ul li a:hover{
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.6);
     border-radius: 6px;  
 }
 
-.carousel{
-    grid-area:carousel;
-    height: 1000px;
-}
 
 #historia{
     grid-area:historia;
-    height: 1000px;
+    display:grid;
+
+    grid-template-columns: 50%;
+    grid-template-areas: "titulo_historia titulo_historia"
+                         "historia_1 historia_2 "
+                         "historia_3 historia_4"
+                         "historia_5 historia_6"
+                        
 
 }
+
+.titulo_historia{
+
+    grid-area: titulo_historia;
+    text-align: center;
+    font-size: 80px;;
+
+}
+
+
+.historia_1{
+    margin:50px;
+    grid-area: historia_1;
+    padding:30px;
+}
+
+.historia_2{
+    grid-area: historia_2;
+    margin:50px;
+    
+    padding:30px;
+}
+
+.historia_3{
+    grid-area: historia_3;
+    margin:40px;
+    padding:20px;
+}
+
+.historia_4{
+    grid-area: historia_4;
+    margin:50px;
+    padding:20px;
+}
+
+.historia_5{
+    grid-area: historia_5;
+    margin:50px;
+    padding:30px;
+}
+
+.historia_6{
+    grid-area: historia_6;
+    margin:50px;
+    padding:30px;
+}
+
 
 #productos{
     grid-area:productos;
